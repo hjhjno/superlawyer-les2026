@@ -48,7 +48,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   .hero-video-wrap{width:100%;padding:130px 32px 0;position:relative;z-index:1;}
   .hero-video-inner{max-width:1100px;margin:0 auto;}
-  .hero-video-box{width:100%;aspect-ratio:16/9;background:var(--dark);border-radius:14px;border:1px solid rgba(0,58,192,0.15);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+  .hero-video-box{width:100%;aspect-ratio:16/9;background:var(--dark);border-radius:14px;border:1px solid #F0F2F8;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
   .hero-video-box::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,58,192,0.14) 0%,rgba(56,208,247,0.05) 100%);}
   .hero-video-ph{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:16px;color:rgba(255,255,255,0.35);}
   .hero-video-ph .play-btn{width:64px;height:64px;border-radius:50%;background:rgba(0,58,192,0.5);border:1px solid rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;transition:background 0.2s,transform 0.15s;cursor:pointer;}
@@ -123,7 +123,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .s2-panel{display:none;}
   .s2-panel.active{display:block;}
   .s2-cta-wrap{text-align:center;margin-top:0;} .s2-panel-sub{font-size:20px;font-weight:400;color:var(--gray-5);line-height:1.7;letter-spacing:-0.01em;margin-bottom:40px;}
-  .s2-video-box{width:100%;aspect-ratio:16/9;background:var(--dark);border-radius:14px;border:1px solid rgba(0,58,192,0.12);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;margin-bottom:80px;}
+  .s2-video-box{width:100%;aspect-ratio:16/9;background:var(--dark);border-radius:14px;border:1px solid #F0F2F8;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;margin-bottom:80px;}
   .s2-video-box::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,58,192,0.12) 0%,rgba(56,208,247,0.04) 100%);}
   .s2-video-ph{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:14px;color:rgba(255,255,255,0.3);}
   .s2-video-ph .play-btn{width:56px;height:56px;border-radius:50%;background:rgba(0,58,192,0.5);border:1px solid rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;transition:background 0.2s,transform 0.15s;cursor:pointer;}
@@ -253,45 +253,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- SECTION 2 -->
 <section class="s2" id="tutorial">
   <div class="s2-inner">
-    <h2 class="s2-head">법률 사건 기반으로 <span class="hl">슈퍼 에이전트를 직접 체험하세요</span></h2>
+    <h2 class="s2-head">법률 사건 기반으로 <span class="hl">슈퍼 에이전트(Beta)를 직접 체험하세요.</span></h2>
 
     <div class="s2-tabs">
-      <div class="s2-tab active" onclick="switchTab(this, &#39;civil&#39;)">민사</div>
-      <div class="s2-tab" onclick="switchTab(this, &#39;criminal&#39;)">형사</div>
-      <div class="s2-tab" onclick="switchTab(this, &#39;corporate&#39;)">기업법무</div>
+      <div class="s2-tab active" onclick="switchTab(this, &#39;tutorial&#39;)">튜토리얼</div>
+      <div class="s2-tab" onclick="switchTab(this, &#39;case&#39;)">사건설명</div>
     </div>
 
-    <div class="s2-panel active" id="tab-civil">
-      <p class="s2-panel-sub">(해당 시나리오 한 줄 설명) — 나중에 교체 예정 &nbsp;/&nbsp; N분 소요</p>
+    <div class="s2-panel active" id="tab-tutorial">
+      <p class="s2-panel-sub">튜토리얼 영상으로 슈퍼 에이전트의 실제 작동 과정을 확인하고, 회원님의 사건 해결에 직접 사용해 보세요. 
+        <br>
+        출시 기념으로 계정당 3회를 무료로 제공해 드립니다. 
+        <br>
+        튜토리얼 영상에서 다루는 사건의 복잡성에 대해 더 알고 싶으시면, '사건설명' 탭에서 확인해 주세요.
+      </p>
       <div class="s2-video-box">
-        <iframe id="vimeo-civil" src="https://player.vimeo.com/video/1202311892?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1&amp;muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen title="민사 시나리오 영상" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+        <iframe id="vimeo-tutorial" src="https://player.vimeo.com/video/1203392068?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen title="LES 2026_개인체험_튜토리얼_20260622_F" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
       </div>
       <div class="s2-cta-wrap"><a data-scenario="scenario1" href="https://superlawyer.co.kr/agent?utm_source=exhibition&amp;utm_medium=&amp;utm_campaign=les-lawyer&amp;utm_term={keyword}&amp;utm_content=scenario1" target="_blank" class="s2-cta">
-        시나리오 체험하기
+        슈퍼 에이전트 둘러보기
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"></path></svg>
       </a></div>
     </div>
 
-    <div class="s2-panel" id="tab-criminal">
-      <p class="s2-panel-sub">(해당 시나리오 한 줄 설명) — 나중에 교체 예정 &nbsp;/&nbsp; N분 소요</p>
+    <div class="s2-panel" id="tab-case">
+      <p class="s2-panel-sub">튜토리얼 영상으로 슈퍼 에이전트의 실제 작동 과정을 확인하고, 회원님의 사건 해결에 직접 사용해 보세요. 
+        <br>
+        출시 기념으로 계정당 3회를 무료로 제공해 드립니다. 
+      </p>
       <div class="s2-video-box">
-        <iframe id="vimeo-criminal" src="https://player.vimeo.com/video/1202311892?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1&amp;muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen title="형사 시나리오 영상" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+        <iframe id="vimeo-case" src="https://player.vimeo.com/video/1203392069?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen title="LES 2026_랜딩_튜토리얼_사건개요_20260622_F" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
       </div>
       <div class="s2-cta-wrap"><a data-scenario="scenario2" href="https://superlawyer.co.kr/agent?utm_source=exhibition&amp;utm_medium=&amp;utm_campaign=les-lawyer&amp;utm_term={keyword}&amp;utm_content=scenario2" target="_blank" class="s2-cta">
-        시나리오 체험하기
-        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"></path></svg>
-      </a></div>
-    </div>
-
-    <div class="s2-panel" id="tab-corporate">
-      <p class="s2-panel-sub">(해당 시나리오 한 줄 설명) — 나중에 교체 예정 &nbsp;/&nbsp; N분 소요</p>
-      <div class="s2-video-box">
-        <iframe id="vimeo-corporate" src="https://player.vimeo.com/video/1202311892?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1&amp;muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen title="기업법무 시나리오 영상" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
-      </div>
-      <div class="s2-cta-wrap"><a data-scenario="scenario3" href="https://superlawyer.co.kr/agent?utm_source=exhibition&amp;utm_medium=&amp;utm_campaign=les-lawyer&amp;utm_term={keyword}&amp;utm_content=scenario3" target="_blank" class="s2-cta">
         시나리오 체험하기
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"></path></svg>
       </a></div>
@@ -375,7 +370,7 @@ function switchTab(tab, id) {
 var vimeoApiScript = document.createElement('script');
 vimeoApiScript.src = "https://player.vimeo.com/api/player.js";
 vimeoApiScript.onload = function() {
-  ['vimeo-hero','vimeo-civil','vimeo-criminal','vimeo-corporate'].forEach(function(id){
+  ['vimeo-hero'].forEach(function(id){
     var el = document.getElementById(id);
     if (!el) return;
     var p = new Vimeo.Player(el);
